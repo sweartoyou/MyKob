@@ -17,7 +17,7 @@ export class GameMap extends AcGameObject {
     }
 
     check_connectivity(g, sx, sy, tx, ty) {
-        if (sx == tx && sy == ty) return false;
+        if (sx == tx && sy == ty) return true;
         g[sx][sy] = true;
 
         let dx = [-1, 0, 1, 0], dy = [0, 1, 0, -1];
@@ -30,6 +30,7 @@ export class GameMap extends AcGameObject {
         return false;
 
     }
+
 
     create_walls() {
         const g = [];
@@ -73,6 +74,8 @@ export class GameMap extends AcGameObject {
                 }
             }
         }
+
+        return true;
     }
 
     start() {
