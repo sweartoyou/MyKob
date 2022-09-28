@@ -11,6 +11,25 @@ import "bootstrap/dist/js/bootstrap"
 export default {
   components: {
     NavBar,
+  },
+  setup() {
+
+
+    // $.ajax({
+    //   url: "http://localhost:3000/user/account/register/",
+    //   type: "post",
+    //   data: {
+    //     username: "tmh2",
+    //     password: "123",
+    //     confirmedPassword: "123",
+    //   },
+    //   success(resp) {
+    //     console.log(resp);
+    //   },
+    //   error(resp) {
+    //     console.log(resp);
+    //   },
+    // });
   }
 }
 </script>
