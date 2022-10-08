@@ -5,6 +5,7 @@
     <modules>
         <module>matchingsystem</module>
         <module>mybackend</module>
+        <module>botrunningsystem</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
